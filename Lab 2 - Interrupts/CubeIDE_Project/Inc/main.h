@@ -3,6 +3,13 @@
 
 #include "stm32f1xx.h"
 #include "stdbool.h"
+// Раскомментировать #define,
+// если нужно использовать DMA при передаче по USART
+#define USE_DMA			1
+
+/* Размеры буферов приёма и передачи */
+#define	RX_BUFF_SIZE	256
+#define TX_BUFF_SIZE	256
 
 #define DELAY_VAL		1000000
 
